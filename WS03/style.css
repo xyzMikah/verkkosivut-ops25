@@ -1,0 +1,168 @@
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background-color: #f4f1ea;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    color: #2b5fa8;
+    letter-spacing: 0.03em;
+    margin-top: 2.5rem;
+}
+
+p {
+    color: #444444;
+}
+
+a {
+    color: #2b5fa8;
+}
+
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    display: block;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+.transition-button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: lightcoral;
+}
+
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    border-radius: 4px;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100px;
+    }
+}
+
+.pseudo-list {
+    list-style: none;
+    padding: 0;
+    max-width: 20rem;
+}
+
+.pseudo-list li {
+    padding: 8px 12px;
+}
+
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+}
+
+.quote {
+    position: relative;
+    padding-left: 30px;
+    margin-left: 0;
+    font-style: italic;
+    color: #555;
+}
+
+.quote::before {
+    content: '\201C';
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    color: lightgray;
+}
+
+.content-box {
+    padding: 20px;
+    margin: 30px 0;
+    background-color: #ffffff;
+    border: 1px solid #d8d2c4;
+    border-radius: 6px;
+}
+
+.content-box h3 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 24rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
