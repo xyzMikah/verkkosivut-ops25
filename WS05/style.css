@@ -1,0 +1,162 @@
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background-color: #f4f1ea;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+}
+
+header {
+    border-bottom: 2px solid #d8d2c4;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+}
+
+h2 {
+    color: #2b5fa8;
+    letter-spacing: 0.03em;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.responsive-nav .menu-toggle {
+    display: none;
+    background-color: #2b5fa8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font: inherit;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.responsive-nav .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.responsive-nav .nav-list a {
+    color: #2b5fa8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.responsive-nav .nav-list a:hover {
+    text-decoration: underline;
+}
+
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #d8d2c4;
+    border-radius: 6px;
+}
+
+.column h3 {
+    margin-top: 0;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.media-query-box {
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 24rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    border-top: 2px solid #d8d2c4;
+    padding-top: 1rem;
+    color: #666;
+    font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+
+    .media-query-box {
+        background-color: lightcoral;
+    }
+
+    .responsive-nav .nav-list {
+        display: none;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .responsive-nav .nav-list.open {
+        display: flex;
+    }
+
+    .responsive-nav .menu-toggle {
+        display: block;
+    }
+}
+
+@media (min-width: 601px) {
+    .media-query-box {
+        background-color: lightblue;
+    }
+}
